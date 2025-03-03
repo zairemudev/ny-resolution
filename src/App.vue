@@ -37,9 +37,11 @@ onMounted(() => {
 
 <template>
   <AppLayout>
-    <div class="w-full p-6 flex flex-col gap-4 overflow-hidden dark:text-white">
+    <div
+      class="w-full py-6 flex flex-col gap-4 overflow-hidden dark:text-white"
+    >
       <!-- Banner -->
-      <div class="font-poppins flex flex-col gap-6 w-full mb-6">
+      <div class="font-poppins flex flex-col gap-6 w-full mb-6 px-6">
         <!-- top -->
         <div class="flex justify-between">
           <!-- username -->
@@ -62,7 +64,7 @@ onMounted(() => {
       </div>
       <!-- add goal -->
       <div
-        class="flex flex-1 items-center justify-end md:justify-center max-w-md relative"
+        class="flex flex-1 items-center justify-end md:justify-center max-w-md relative px-6"
       >
         <div
           class="items-center w-full flex border-2 border-black dark:border-slate-500 rounded-2xl p-4 shadow inset-shadow gap-2"
@@ -81,7 +83,7 @@ onMounted(() => {
           </button>
         </div>
       </div>
-      <div class="flex flex-col gap-4 py-5 h-full max-w-full overflow-y-scroll">
+      <div class="flex flex-col gap-4 py-5 px-6 h-full max-w-full overflow-y-scroll">
         <GoalItem :key="goal.id" v-for="goal in appStore.goals" :data="goal" />
       </div>
     </div>
