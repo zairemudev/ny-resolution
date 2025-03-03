@@ -37,22 +37,20 @@ onMounted(() => {
 
 <template>
   <AppLayout>
-    <div
-      class="w-full p-6 flex flex-col gap-4 overflow-hidden"
-      :class="`${appStore.isDarkMode ? 'dark' : ''}`"
-    >
+    <div class="w-full p-6 flex flex-col gap-4 overflow-hidden dark:text-white">
       <!-- Banner -->
       <div class="font-poppins flex flex-col gap-6 w-full mb-6">
         <!-- top -->
         <div class="flex justify-between">
           <!-- username -->
           <div class="text-lg">
-            Welcome, <span class="text-gray-500">{{ "ploy" }}</span>
+            Welcome,
+            <span class="text-gray-500 dark:text-slate-400">{{ "ploy" }}</span>
           </div>
           <!-- count -->
           <div class="flex gap-2 items-center">
             <div
-              class="flex items-center justify-center border-2 border-black rounded-full w-8 h-8"
+              class="flex items-center justify-center border-2 border-black dark:border-slate-500 rounded-full w-8 h-8"
             >
               {{ appStore.getCheckedGoal }}
             </div>
@@ -67,7 +65,7 @@ onMounted(() => {
         class="flex flex-1 items-center justify-end md:justify-center max-w-md relative"
       >
         <div
-          class="items-center w-full flex border-2 border-black rounded-2xl p-4 shadow inset-shadow gap-2"
+          class="items-center w-full flex border-2 border-black dark:border-slate-500 rounded-2xl p-4 shadow inset-shadow gap-2"
         >
           <input
             type="text"
@@ -76,7 +74,7 @@ onMounted(() => {
             v-model="goalNameInput"
           />
           <button
-            class="cursor-pointer rounded-full bg-black p-1"
+            class="cursor-pointer rounded-full bg-black dark:bg-slate-600 p-1"
             @click="handleAddGoal()"
           >
             <Plus class="text-white" :size="20" :strokeWidth="2" />

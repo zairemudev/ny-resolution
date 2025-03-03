@@ -26,11 +26,13 @@ const handleCheckGoal = (id: string) => {
 
 <template>
   <div
-    class="relative p-4 flex items-center justify-between gap-2 border-2 border-black bg-white rounded-2xl"
+    class="relative p-4 flex items-center justify-between gap-2 border-2 border-black bg-white rounded-2xl text-black"
   >
     <button
       class="cursor-pointer rounded-full border-2 p-1 flex-none w-8 h-8 flex items-center justify-center"
-      :class="`${data.isDone ? 'border' : 'border-dashed border-black'}`"
+      :class="`${
+        data.isDone ? 'border' : 'border-dashed border-black'
+      } dark:border-slate-500`"
       @click="handleCheckGoal(data.id)"
     >
       <Check
@@ -48,7 +50,7 @@ const handleCheckGoal = (id: string) => {
     </div>
 
     <button
-      class="cursor-pointer flex items-center justify-center flex-none p-1 w-6 h-6 rounded-full bg-black"
+      class="cursor-pointer flex items-center justify-center flex-none p-1 w-6 h-6 rounded-full bg-black dark:bg-slate-600"
       @click="handleDeleteGoal(data.id)"
     >
       <Trash2 class="text-white" :size="14" />
