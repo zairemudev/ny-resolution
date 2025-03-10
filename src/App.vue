@@ -47,7 +47,7 @@ onMounted(() => {
           <!-- username -->
           <div class="text-lg">
             Welcome,
-            <span class="text-gray-500 dark:text-slate-400">{{ "ploy" }}</span>
+            <span class="text-gray-500 dark:text-slate-400 ml-1">{{ "ploy" }}</span>
           </div>
           <!-- count -->
           <div class="flex gap-2 items-center">
