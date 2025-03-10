@@ -5,9 +5,9 @@ import { useAppStore } from "../store.ts";
 const appStore = useAppStore();
 </script>
 <template>
-  <header class="bg-white dark:bg-slate-800">
+  <header class="">
     <div
-      class="mx-auto flex flex-none h-16 min-w-sm max-w-md items-center gap-6 px-4 sm:px-6 justify-between border-b border-gray-100 dark:border-slate-700"
+      class="bg-white dark:bg-slate-800 mx-auto flex flex-none h-16 min-w-sm max-w-md items-center gap-6 px-4 sm:px-6 justify-between border-b border-gray-100 dark:border-slate-700"
     >
       <!-- logo -->
 
