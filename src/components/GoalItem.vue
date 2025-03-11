@@ -44,7 +44,7 @@ const handleCheckGoal = (id: string) => {
     </button>
 
     <div
-      :class="`${data.isDone ? 'italic line-through' : 'not-italic'} flex-1`"
+      :class="`${data.isDone ? 'italic line-through' : 'not-italic'} flex-1 break-all`"
     >
       {{ data.name }}
     </div>
